@@ -2,13 +2,9 @@
 {%block title%}Home |{%endblock title%}
 {% block content %}
 <div class="main-container main-content-list container">
-    <!--remover depois, pois sera inclementado com JS-->
-    {% include 'recipes/partials/recipe.html' %}
-    <!--remover depois, pois sera inclementado com JS-->
-    {% include 'recipes/partials/recipe.html' %}
-    <!--remover depois, pois sera inclementado com JS-->
-    {% include 'recipes/partials/recipe.html' %}
-    <!--remover depois, pois sera inclementado com JS-->
-    {% include 'recipes/partials/recipe.html' %}
+    <!--for responsavel por mostrar todas as receitas na pagina principal-->
+    {% for recipe in recipes %}
+        {% include 'recipes/partials/recipe.html' %}
+    {% endfor %}
 </div>
 {% endblock content %}
