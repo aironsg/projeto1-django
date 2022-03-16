@@ -1,0 +1,20 @@
+{% include 'recipes/partials/head.html' %}
+
+<body>
+    <!--Logo do site-->
+    {% include 'recipes/partials/header.html' %}
+    <!--Caixa de pesquisa-->
+    {% include 'recipes/partials/search.html' %}
+    <main class="main-content-container">
+        <div class="main-container main-content-detail container">
+            <!--remover depois, pois sera inclementado com JS-->
+            {% include 'recipes/partials/recipe.html' %}
+        </div>
+    </main>
+    {% include 'recipes/partials/footer.html' %}
+
+
+
+</body>
+
+</html>
