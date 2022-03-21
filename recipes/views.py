@@ -12,14 +12,7 @@ def home(request):
 
 
 def category(request, category_id):
-    """
-        deixar registrado que prefito desta maneira, pois posso colocar
-        mensagens de erros, mais amigaveis para o usuario.
-    # recipes = Recipe.objects.filter(
-    #     category__id=category_id, is_published=True).order_by('-id')
-    # if not recipes:
-    #     raise Http404('Pagina não encontrada 🥲')
-    """
+
     recipes = get_list_or_404(
         Recipe.objects.filter(
             category__id=category_id,
